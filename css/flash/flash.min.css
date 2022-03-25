@@ -1,0 +1,319 @@
+/* default-values-of-html-elements */
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+}
+
+html * {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	margin: 0;
+	scroll-behavior: smooth;
+	-webkit-text-size-adjust: 100%;
+}
+
+body.fl-page-is-not-loaded * {
+	transition: none !important;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	outline: 0;
+	white-space: nowrap;
+}
+
+button {
+	border: 0;
+	white-space: nowrap;
+}
+
+a:focus,
+button:focus {
+	outline: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* the-end-of-default-values-of-html-elements */
+
+
+/* fl-flex */
+
+.fl-flex-row-wrap-space-between-and-center {
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	justify-content: space-between;
+	-ms-flex-pack: justify;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: center;
+  	-ms-flex-align: center;	
+}
+
+.fl-flex-divider-in-small-screen {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.fl-flex-divider-in-small-screen {
+		width: 100%;
+		display: block;
+	}
+
+}	
+
+/* the-end-of-fl-flex */
+
+
+/* fl-hiding-in-different-screens */ 
+@media only screen and (min-width: 1025px) {
+
+	.fl-hide-in-big-screen {
+		display: none !important;
+	}
+
+}
+@media only screen and (max-width: 1024px) {
+
+	.fl-hide-in-small-screen {
+		display: none !important;
+	}
+
+}
+
+/* the-end-of-fl-hiding-in-different-screens */
+
+
+/* fl-margins */
+
+@media only screen and (max-width: 1024px) {
+
+	.ml-auto-in-small-screen {
+		margin-left: auto;
+	}
+	.mt-1-in-small-screen {
+		margin-top: 1rem;
+	}	
+
+}	
+
+/* the-end-of-fl-margins */
+
+
+
+/* fl-positions */
+
+.fl-relative { position: relative; }
+
+.fl-fixed { position: fixed; }
+
+.fl-absolute { position: absolute; }
+
+.fl-sticky { position: sticky;  position: -webkit-sticky; }
+
+.fl-static { position: static; }
+
+/* the-end-of-fl-positions */
+
+
+
+/* fl-slick */
+
+/* ---dots--- */
+
+.fl-slick-dots .slick-dots {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 50px;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	justify-content: center;
+	-ms-flex-pack: center;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: center;
+  	-ms-flex-align: center;
+}
+
+.fl-slick-dots .slick-dots button {
+	margin-top: 1rem;
+	margin-right: 1.5vw;
+	cursor: pointer;
+	width: 1vw;
+	height: 1vw;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	color: transparent;
+	background-color: grey;
+	transition: background-color 0.3s ease;
+}
+
+.fl-slick-dots .slick-dots .slick-active button {
+	background-color: #41a5e5;
+}
+
+.fl-slick-dots .slick-dots li:last-child button {
+	margin-right: 0;
+} 
+
+@media only screen and (max-width: 1024px) {
+
+	.fl-slick-dots .slick-dots button {
+		width: 2vw;
+		height: 2vw;
+		margin-right: 2.5vw;
+	}
+
+}
+
+/* ---arrows--- */
+.fl-slick-arrows {
+	position: relative;
+}
+
+.fl-slick-arrows .slick-arrow {
+	visibility: hidden;
+}
+
+.fl-slick-arrows .slick-arrow::before {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% - 15px);
+	background-color: #bdc2c6;
+	font-family: "FontAwesome";
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	-ms-flex-pack: center;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: center;
+  	-ms-flex-align: center;
+  	z-index: 1;
+  	visibility: visible;
+  	transition: background-color 0.3s ease;
+}
+
+.fl-slick-arrows .slick-prev::before {
+	content: "\f053";
+	left: 1vw;
+}
+
+.fl-slick-arrows .slick-next::before {
+	content: "\f054";
+	right: 1vw;
+}
+
+/* the-end-of-fl-slick */	
+
+
+
+
+/* fl-back-to-top-button */
+
+.fl-back-to-top-btn {
+	position: fixed;
+	z-index: 4;
+	bottom: -100%;
+	right: 2rem;
+	background-color: rgba(38,38,38, 0.5);
+	color: #fafafa;
+	transition-property: visibility, opacity, background-color, bottom;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	border: 0;
+	outline: 0 !important;
+	padding: 1.5rem;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+.fl-back-to-top-btn.fl-show {
+	bottom: 5rem;
+	visibility: visible;
+	opacity: 1;
+}	
+
+.fl-back-to-top-btn i {
+	display: flex;
+	display: -ms-flexbox;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	justify-content: center;
+	align-content: center;
+	height: 90%;
+	width: 90%;
+	top: 5%;
+	left: 5%;
+	position: absolute;
+	transition: top 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.fl-back-to-top-btn i:last-child {
+	top: 100%;
+	opacity: 0;
+}
+
+.fl-back-to-top-btn:hover i:first-child {
+	top: -100%; 
+	opacity: 0;
+}
+
+.fl-back-to-top-btn:hover i:last-child {
+	top: 5%;
+	opacity: 1;
+}
+
+@media (hover: hover) {
+
+	.fl-back-to-top-btn:hover {
+		background-color: rgba(38,38,38, 0.8);
+	}
+
+}
+
+.fl-back-to-top-btn:active {
+	background-color: rgba(38,38,38, 1.0);
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.fl-back-to-top-btn {
+		padding: 1rem;
+	}	
+
+	.fl-back-to-top-btn.fl-show {
+		bottom: 2rem;
+	}
+	
+}
+
+/* the-end-of-fl-back-to-top-button */

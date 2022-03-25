@@ -1,0 +1,44 @@
+/* fl-footer */
+
+.fl-footer {
+	background-color: #262626;
+	padding: 5vw;
+	margin-top: 12vw;
+}
+
+.fl-footer-item { 
+	margin-top: 1vw;
+}
+
+.fl-footer-inline-list .fl-footer-item {
+	display: inline-block;
+	margin-right: 1vw;
+}
+
+.fl-footer-inline-list .fl-footer-item:last-child {
+	margin-right: 0;
+}
+
+.fl-footer-link {
+	color: white;
+	transition: color 0.3s ease;
+	font-weight: bold;
+}
+
+@media (hover: hover) {
+
+	.fl-footer-link:hover {
+		color: #707b81;
+	}
+
+}
+
+.fl-footer-link:active {
+	color: #707b81;
+}
+
+.fl-footer-icon {
+	margin-right: 0.5vw;
+}
+
+/* the-end-of-fl-footer */
