@@ -1,33 +1,20 @@
 // navbar
 
-window.addEventListener('scroll', navbarFromTop);
-window.addEventListener('load', navbarFromTop);
+changeNavbar();
 
-function navbarFromTop() {
-
-	// elements-and-values
+function changeNavbar() {
+	
 	const navbar = document.querySelector('.fl-navbar');
 
-	// funtions
-	function fromTop() {
+	function change() {
 
-		navbar.classList.add('navbar-hide');
-		setTimeout(function() {
-			navbar.classList.add('navbar-from-top');
-		}, 10);
+		if (document.documentElement.scrollTop > 10) navbar.classList.add('navbar-is-changed');
+		else navbar.classList.remove('navbar-is-changed');
 
-	}
-
-	function defaultCase() {
-
-		navbar.classList.remove('navbar-hide');
-		navbar.classList.remove('navbar-from-top');
-			
 	}	
 
-	// using-functions
-	if (document.documentElement.scrollTop > 2) fromTop();
-	else defaultCase();
+	window.addEventListener('scroll', change);
+	window.addEventListener('load', change);
 
 }
 

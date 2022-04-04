@@ -1,10 +1,39 @@
 /* fl-footer */
 
 .fl-footer {
-	background-color: #262626;
-	padding: 5vw;
+	border-top: 7px solid #cfa144;
+	background-color: #323542;
+	padding: 5vw 10vw;
 	margin-top: 12vw;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	justify-content: space-between;
+	-ms-flex-pack: justify;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: flex-start;
+  	-ms-flex-align: start;	
 }
+
+.fl-footer-title {
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 2vw;
+}
+
+.fl-footer-list-divider {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3vw;
+}
+
+.fl-footer-list-divider .fl-footer-item:first-child {
+	margin-top: 0;
+}	
 
 .fl-footer-item { 
 	margin-top: 1vw;
@@ -22,23 +51,32 @@
 .fl-footer-link {
 	color: white;
 	transition: color 0.3s ease;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 @media (hover: hover) {
 
 	.fl-footer-link:hover {
-		color: #707b81;
+		color: #cfa144;
 	}
 
 }
 
 .fl-footer-link:active {
-	color: #707b81;
+	color: #cfa144;
 }
 
 .fl-footer-icon {
 	margin-right: 0.5vw;
 }
+
+@media only screen and (max-width: 1024px) {
+
+	.fl-footer > * {
+		width: 100%;
+		margin-top: 5vw;
+	}
+
+}	
 
 /* the-end-of-fl-footer */

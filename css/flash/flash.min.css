@@ -108,6 +108,9 @@ ul {
 	}
 	.mt-1-in-small-screen {
 		margin-top: 1rem;
+	}
+	.mr-1-in-small-screen {
+		margin-right: 1rem;
 	}	
 
 }	
@@ -317,3 +320,173 @@ ul {
 }
 
 /* the-end-of-fl-back-to-top-button */
+
+
+
+/* fl-layer-overlays */
+
+.fl-layer-overlay {
+	position: relative;
+}
+
+.fl-layer-overlay::before {
+	background-color: rgba(17, 17, 17, 0.5);
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/* the-end-of-fl-layer-overlays */
+
+
+
+/* fl-background-images */
+
+.fl-bg-img {
+	background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* the-end-of-fl-background-images */
+
+
+
+/* titles */
+
+.fl-title-1 {
+	font-size: 70px !important;
+	line-height: 80px; 
+}
+
+.fl-title-2 {
+	font-size: 60px !important;
+	line-height: 70px; 
+}
+
+.fl-title-3 {
+	font-size: 40px !important;
+	line-height: 50px; 
+}
+
+@media only screen and (max-width: 800px) {
+
+	.fl-title-1 {
+		font-size: 40px !important;
+		line-height: 50px;
+	}
+
+	.fl-title-2 {
+		font-size: 30px !important;
+		line-height: 40px;
+	}
+
+	.fl-title-3 {
+		font-size: 20px !important;
+		line-height: 30px;
+	}
+
+}	
+
+/* the-end-of-titles */
+
+
+
+/* flash-font-size-changer */
+
+.fl-font-size-changer-con {
+	font-size: 0;
+	margin: 0;
+}
+
+.fl-font-size-changer-btn {
+	border: 0;
+	outline: 0 !important;
+	padding: 1rem 1.5rem;
+	transition-property: background-color, color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	cursor: pointer;
+	position: relative;
+	color: white;
+}
+
+.fl-font-size-changer-icon {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 8px !important;
+}
+
+.fl-font-size-changer-plus {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background-color: #cfa144;
+}
+
+.fl-font-size-changer-minus {
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	background-color: #323542;
+}
+
+@media (hover: hover) {
+
+	.fl-font-size-changer-minus:hover {
+		background-color: #cfa144;
+	}
+	.fl-font-size-changer-plus:hover  {
+		background-color: #323542;
+	}
+
+}
+
+.fl-font-size-changer-minus:active {
+	background-color: #cfa144;
+}
+
+.fl-font-size-changer-plus:active  {
+	background-color: #323542;
+}
+
+.fl-font-size-changer-btn:disabled {
+	background-color: grey;
+	cursor: initial;
+}
+
+.ffsc-font-size-1 {
+	font-size: 16px;
+	transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+.ffsc-font-size-2 {
+	font-size: 21px;
+	line-height: 26px;
+	transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+.ffsc-font-size-3 {
+	font-size: 26px;
+	line-height: 31px;
+	transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+.ffsc-font-size-4 {
+	font-size: 31px;
+	line-height: 36px;
+	transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+.ffsc-font-size-5 {
+	font-size: 36px;
+	line-height: 41px;
+	transition: font-size 0.3s ease, line-height 0.3s ease;
+}
+
+/* the-end-of-flash-font-size-changer */
+

@@ -1,119 +1,44 @@
-/* html-elements */
 
-body {
-	background-color: #f6f5f5;
-}
 header {
-	position: fixed;
-	top: 0;
-	z-index: 3;
-	left: 0;
-	width: 100%;
+	background-image: url('../images/header-bg.jpg');
+	min-height: 320px;
+	padding-bottom: 30px;
 }
-
-/* the-end-of-html-elements */
-
-
-
-/* header-con */
-
-.header-con {
-	position: relative;
-	z-index: 2;
-	background-color: #262626;
-	padding: 1rem;
-}
-
-.header-con-brand-img {
-	width: 200px;
-	height: auto;
-}
-
-.header-con-buy-btn {
-	background-color: #82b440;
-	padding: 0.5rem 1rem;
-	color: white;
-	border-radius: 8px;
-	transition: background-color 0.3s linear;
-}
-
-@media (hover: hover) {
-
-	.header-con-buy-btn:hover {
-		background-color: #72af22;
-	}
-
-}
-
-.header-con-buy-btn:active {
-	background-color: #62a110;
-}
-
-@media only screen and (max-width: 800px) {
-
-	.header-con-brand-img {
-		width: 150px;
-	}
-
-}	
-
-@media only screen and (max-width: 599px) {
-
-	.header-con-brand-img {
-		width: 100px;
-	}
-
-}
-
-/* the-end-of-header-con */
 
 
 
 /* navbar */
 
-.navbar-hide { 
-	visibility: hidden;
-	position: absolute;
-	width: calc(100% - 4rem);
-	margin-top: -100%;
+.fl-navbar.navbar-is-changed {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid #ffffff;
 }
 
-.navbar-from-top {
-	transition: margin-top 0.5s ease, visibility 0s ease;
-	visibility: visible;
-	margin-top: 0;
-	background-color: white;
-	box-shadow: 0 0 0 grey, 0 2px 10px lightgrey;
+.navbar-is-changed .fl-nav-link {
+	color: #111111;
 }
 
-@media only screen and (min-width: 1025px) {
-
-	.fl-nav-link {
-		position: relative;
-	}
-
-	.fl-nav-link::before {
-		content: '';
-	    position: absolute;
-	    bottom: -4px;
-	    left: 50%;
-	    width: 0;
-	    height: 2px;
-	    background-color: #fe043c;
-	    opacity: 0;
-	    visibility: hidden;
-	    transition: all 0.4s ease-in-out;
-	} 
-
-	.fl-nav-link:hover::before {
-		width: 100%;
-		left: 0;
-		opacity: 1;
-		visibility: visible;
-	}  
-
-}	 
+.navbar-links-title {
+	margin: 0 0 0.5rem;
+	color: #cfa144;
+	text-align: center;
+}
 
 /* the-end-of-navbar */
+
+
+
+/* sm-screen-menu */
+
+.sm-screen-menu-link-line {
+	background-color: #88889b;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 1px;
+	right: 50px;
+}
+
+/* the-end-of-sm-screen-menu */
 
 
