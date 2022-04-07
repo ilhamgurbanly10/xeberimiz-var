@@ -369,7 +369,8 @@
 
 	.fl-posts-container {
 		width: 90%;
-		margin: 3vw auto 0;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	.fl-responsive-posts {
