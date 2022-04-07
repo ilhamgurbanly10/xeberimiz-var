@@ -135,18 +135,6 @@ header {
 
 }
 
-@media only screen and (max-width: 400px) {
-
-	.fl-navbar {
-		flex-flow: column wrap;
-		-ms-flex-wrap: wrap;
-		-ms-flex-direction: column;
-		justify-content: center;
-		-ms-flex-pack: center;	
-	}
-
-}
-
 /* the-end-of-navbar */
 
 
