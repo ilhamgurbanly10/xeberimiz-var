@@ -1,0 +1,47 @@
+
+.post-first-info,
+.post-second-info {
+	color: #313440;
+	margin: 0.8rem 0 0;
+	font-weight: bold;
+}
+
+.post-second-info span {
+	color: grey;
+	font-weight: normal;
+}
+
+.post-text {
+	color: #313440;
+	margin: 0.8rem 0 0;
+	font-weight: bold;
+}
+
+.selected-text-style::selection {
+	color: white;
+	background-color: #313440;
+}
+
+.post-text-title {
+	color: #313440;
+	font-weight: bold;
+}
+
+.fl-post-text span {
+	font-style: italic;
+}
+
+.post-writer-and-date {
+	margin-top: 3rem;
+	color: #313440;
+	font-weight: bold;
+}
+
+.post-writer-and-date span {
+	color: grey;
+	font-weight: normal;
+}
+
+.post-writer-and-date p {
+	margin: 0 !important;
+}

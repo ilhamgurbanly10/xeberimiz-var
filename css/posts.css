@@ -1,0 +1,65 @@
+
+.fl-main-posts-image-container::before {
+	content: "\f04b";
+	font-family: "FontAwesome";
+	position: absolute;
+	z-index: 0;
+	font-size: 2rem !important;
+	bottom: 1rem;
+	left: 1rem;
+	padding: 0.1rem 1.5rem;
+	background-color: white;
+	color: #cfa144;
+}	
+
+.main-posts-icon {
+	position: absolute;
+	top: 0;
+	left: 1rem;
+	width: 20%;
+	height: auto;
+}
+
+.pagination-divider {
+	width: 70%;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	justify-content: center;
+	-ms-flex-pack: center;	
+	align-content: center;
+	-ms-flex-line-pack: center;
+	align-items: center;
+  	-ms-flex-align: center;
+}
+
+.pagination-divider .fl-pagination-item:not(:last-child) {
+	margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.fl-main-posts-image-container::before {
+		bottom: 0.5rem;
+		left: 0.5rem;
+		font-size: 1rem !important;
+		padding: 0.4rem 1.3rem;
+	}
+
+	.main-posts-icon {
+		left: 0.5rem;
+	}
+
+	.pagination-divider {
+		width: 100%;
+		/*justify-content: flex-start;
+		-ms-flex-pack: start;*/
+	}
+
+	.pagination-divider .fl-pagination-item:not(:last-child) {
+		margin-right: 0;
+	}
+
+}	

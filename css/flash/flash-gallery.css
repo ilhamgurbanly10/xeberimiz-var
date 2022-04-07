@@ -6,6 +6,17 @@
 	margin: auto;
 }
 
+.fl-gallery-main-con * {
+
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	-webkit-touch-callout: none;
+    -khtml-user-select: none;
+    
+}
+
 .fl-gallery-title {
 	text-align: center;
 	color: #323542;
@@ -302,6 +313,7 @@
 	transform: translateX(0);
 }
 
+
 .fl-gallery-modal-img-con {
 	display: inline-block;
 	height: 100%;
@@ -321,6 +333,10 @@
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .fl-gallery-modal-images-indexes {

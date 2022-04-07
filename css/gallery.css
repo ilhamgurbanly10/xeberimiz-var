@@ -1,19 +1,20 @@
 
+.fl-gallery-title {
+	color: #cfa144;
+}
+
 .fl-post-container {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: auto !important;
+	margin-right: auto  !important;
 	width: 90%;
 }
 
 .fl-post-list {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .fl-post-item:nth-child(2) {
 	margin-left: 0;
 	margin-right: 0;
 }
-
-.fl-comments-container {
-	margin-left: 5%;
-}	
+	
