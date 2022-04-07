@@ -45,7 +45,7 @@
 	margin-top: 150px;
 	margin-bottom: 50px;
 	display: block;
-	width: 200px;
+	width: 100px;
 	height: auto;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .fl-navbar-brand {
-	width: 200px;
+	width: 80px;
 	overflow: hidden;
 }
 
@@ -329,20 +329,12 @@
 	text-indent: 1rem;
 }
 
-/*---the-end-of-fl-navbar-dropdown--*/	
-
-@media only screen and (max-width: 800px) {
-
-	.fl-navbar-brand {
-		width: 150px;
-	}
-
-}	
+/*---the-end-of-fl-navbar-dropdown--*/		
 
 @media only screen and (max-width: 599px) {
 
 	.fl-navbar-brand {
-		width: 100px;
+		width: 50px;
 	}
 
 }
@@ -514,7 +506,7 @@
 }
 
 .fl-navbar-links-link-icon {
-	
+		
 }
 
 /* the-end-of-fl-navbar-links */
